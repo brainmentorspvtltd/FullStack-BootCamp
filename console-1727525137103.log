@@ -1,0 +1,48 @@
+Symbol();
+Symbol()
+var t = Symbol();
+undefined
+typeof t;
+'symbol'
+t;
+Symbol()
+var t2 = Symbol();
+undefined
+typeof t2;
+'symbol'
+t == t2;
+false
+var arr = [10,20,30];
+undefined
+typeof arr;
+'object'
+var products = ["Books", "Bags", "Phones", "Pencils"];
+undefined
+products[0];
+'Books'
+products[1];
+'Bags'
+products.push("Tablets");
+5
+products;
+(5) ['Books', 'Bags', 'Phones', 'Pencils', 'Tablets']
+products.length;
+5
+products;
+(5) ['Books', 'Bags', 'Phones', 'Pencils', 'Tablets']
+products = null;
+null
+products.length;
+VM705:1 Uncaught TypeError: Cannot read properties of null (reading 'length')
+    at <anonymous>:1:10
+(anonymous) @ VM705:1
+typeof products;
+'object'
+var t = 100;
+undefined
+typeof t;
+'number'
+t =  null;
+null
+typeof t;
+'object'

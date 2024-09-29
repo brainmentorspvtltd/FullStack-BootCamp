@@ -1,0 +1,80 @@
+// string
+undefined
+var a = "amit";
+undefined
+typeof a ;
+'string'
+a= 'amit';
+'amit'
+typeof a ;
+'string'
+a='a';
+'a'
+typeof a ;
+'string'
+a="a";
+'a'
+typeof a ;
+'string'
+a= "Let's do it ";
+"Let's do it "
+a= `gdfkjghdfjkghdfkgjfd
+gjhfdkgfdkhjgd
+hgdfkj
+`;
+'gdfkjghdfjkghdfkgjfd\ngjhfdkgfdkhjgd\nhgdfkj\n'
+a;
+'gdfkjghdfjkghdfkgjfd\ngjhfdkgfdkhjgd\nhgdfkj\n'
+console.log(a);
+VM322:1 gdfkjghdfjkghdfkgjfd
+gjhfdkgfdkhjgd
+hgdfkj
+
+undefined
+var a= 10;
+undefined
+var b = 20;
+undefined
+"A is "+a+" b is "+b;
+'A is 10 b is 20'
+`A is ${a} b is ${b}`;
+'A is 10 b is 20'
+var name = 'Tom';
+var role = 'SDE';
+var offer = `Dear ${name},
+    You had selected for the role of ${role}
+`;
+undefined
+offer;
+'Dear Tom,\n    You had selected for the role of SDE\n'
+name = 'Kim';
+'Kim'
+role = 'Tester';
+'Tester'
+var offer = `Dear ${name},
+    You had selected for the role of ${role}
+`;
+undefined
+offer;
+'Dear Kim,\n    You had selected for the role of Tester\n'
+console.log(offer);
+VM764:1 Dear Kim,
+    You had selected for the role of Tester
+
+undefined
+var att = true;
+undefined
+typeof att;
+'boolean'
+att + 10;
+11
+true + true;
+2
+true + "amit";
+'trueamit'
+10 + true - false
+11
+undefined + 10;
+NaN
+undefined + undefined;
+NaN

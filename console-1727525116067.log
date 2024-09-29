@@ -1,0 +1,58 @@
+// dot vs []
+undefined
+var dhoni = {name:'MS Dhoni', age:43, city:'New Delhi', 6:100, 4: 400, 50 : 52, 100: 10};
+undefined
+dhoni.name;
+'MS Dhoni'
+dhoni['name']
+'MS Dhoni'
+dhoni[6]
+100
+dhoni[4]
+400
+dhoni[50]
+52
+dhoni.50;
+VM175:1 Uncaught SyntaxError: Unexpected number
+dhoni.age;
+43
+dhoni['name']
+'MS Dhoni'
+dhoni['country name'] = 'India';
+'India'
+dhoni;
+{4: 400, 6: 100, 50: 52, 100: 10, name: 'MS Dhoni', age: 43, city: 'New Delhi', country name: 'India'}
+dhoni.country name;
+VM369:1 Uncaught SyntaxError: Unexpected identifier 'name'
+dhoni['country name'];
+'India'
+var key = "age";
+undefined
+dhoni[key];
+43
+dhoni.key;
+undefined
+for(var key in dhoni){
+    console.log(key);
+}
+VM619:2 4
+VM619:2 6
+VM619:2 50
+VM619:2 100
+VM619:2 name
+VM619:2 age
+VM619:2 city
+VM619:2 country name
+undefined
+for(var key in dhoni){
+    console.log(key, dhoni[key]);
+}
+VM666:2 4 400
+VM666:2 6 100
+VM666:2 50 52
+VM666:2 100 10
+VM666:2 name MS Dhoni
+VM666:2 age 43
+VM666:2 city New Delhi
+VM666:2 country name India
+undefined

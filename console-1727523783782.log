@@ -1,0 +1,16 @@
+// undefined == null
+undefined
+undefined == null;
+true
+typeof undefined;
+'undefined'
+typeof null;
+'object'
+10 + undefined;
+NaN
+10 + null;
+10
+undefined === null;
+false
+10 == "10"
+true

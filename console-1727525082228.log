@@ -1,0 +1,46 @@
+// Immutable vs Mutable JS
+undefined
+var a = 10;
+undefined
+a + 20;
+30
+a;
+10
+a  = a + 20;
+30
+a;
+30
+var arr = [10,20,30];
+undefined
+var t = arr;
+undefined
+t[0] = 10000;
+10000
+t;
+(3) [10000, 20, 30]
+arr'
+VM319:1 Uncaught SyntaxError: Invalid or unexpected token
+arr;
+(3) [10000, 20, 30]
+arr;
+(3) [10000, 20, 30]
+var r = [...arr];
+undefined
+r;
+(3) [10000, 20, 30]
+r == arr;
+false
+var t = arr;
+undefined
+t == arr;
+true
+r;
+(3) [10000, 20, 30]
+arr;
+(3) [10000, 20, 30]
+r[0] = 1;
+1
+r;
+(3) [1, 20, 30]
+arr;
+(3) [10000, 20, 30]

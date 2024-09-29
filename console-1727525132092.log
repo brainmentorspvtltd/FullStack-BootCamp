@@ -1,0 +1,12 @@
+1 + "1"
+'11'
+'Amit' + ' Srivastava'
+'Amit Srivastava'
+1 - "1"
+0
+'Amit' - ' Srivastava'
+NaN
+10 - "10"
+0
+10 * "2"
+20

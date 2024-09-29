@@ -1,0 +1,38 @@
+// typeof vs instanceof
+undefined
+var a = 10;
+undefined
+typeof a;
+'number'
+a = "Amit";
+'Amit'
+typeof a;
+'string'
+a = [10,20,30];
+(3) [10, 20, 30]
+typeof a;
+'object'
+a = {id:1001, name:'Amit'};
+{id: 1001, name: 'Amit'}
+typeof a;
+'object'
+a = new Number(100);
+Number {100}
+typeof a;
+'object'
+a instanceof Number;
+true
+typeof Number;
+'function'
+a instanceof Array;
+false
+a;
+Number {100}
+a = [10,20,30];
+(3) [10, 20, 30]
+typeof a;
+'object'
+a instanceof Array;
+true
+typeof a;
+'object'

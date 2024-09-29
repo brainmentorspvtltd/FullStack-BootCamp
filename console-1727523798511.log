@@ -1,0 +1,38 @@
+// Array vs Object Literal
+undefined
+var arr = [10,20,30,40];
+undefined
+// index + value
+undefined
+arr[0];
+10
+arr[1];
+20
+typeof arr;
+'object'
+var dhoni = {name:'MS Dhoni', age:43, city:'New Delhi', 6:100, 4: 400, 50 : 52, 100: 10};
+undefined
+typeof dhoni;
+'object'
+dhoni['name'];
+'MS Dhoni'
+dhoni[6];
+100
+dhoni.name;
+'MS Dhoni'
+arr instanceof Array;
+true
+typeof Array;
+'function'
+dhoni instanceof Array;
+false
+dhoni instanceof Object;
+true
+typeof Object;
+'function'
+dhoni instanceof Object;
+true
+arr instanceof Array;
+true
+arr instanceof Object;
+true

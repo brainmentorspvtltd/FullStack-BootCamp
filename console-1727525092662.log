@@ -1,0 +1,50 @@
+// NaN == NaN
+undefined
+typeof NaN;
+'number'
+var t = 10 + undefined;
+undefined
+t;
+NaN
+typeof t;
+'number'
+NaN == NaN
+false
+var t = 10 + undefined;
+undefined
+var t2 = 10 * undefined;
+undefined
+t;
+NaN
+t2;
+NaN
+t == t2;
+false
+t === t2;
+false
+typeof t == typeof t2;
+true
+var t = 10 + undefined;
+undefined
+var t2 = 10 + undefined;
+undefined
+t == t2;
+false
+10 * "ten";
+NaN
+var b = 10 * "ten";
+undefined
+var a = 10 /"Amit";
+undefined
+a;
+NaN
+b;
+NaN
+a == b;
+false
+typeof a;
+'number'
+typeof b;
+'number'
+typeof a == typeof b;
+true

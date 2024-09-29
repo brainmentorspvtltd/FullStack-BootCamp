@@ -1,0 +1,64 @@
+// JS High Level Language
+undefined
+var a;
+undefined
+typeof a;
+'undefined'
+a = 10;
+10
+typeof a;
+'number'
+a=100000000000;
+100000000000
+typeof a;
+'number'
+a=1000.20;
+1000.2
+typeof a;
+'number'
+a= 10 + undefined;
+NaN
+typeof a;
+'number'
+isNaN(a);
+true
+a;
+NaN
+isNaN(a)?0:a;
+0
+a;
+NaN
+a = 100;
+100
+isNaN(a)?0:a;
+100
+a=10/0;
+Infinity
+typeof a;
+'number'
+a;
+Infinity
+isFinite(a);
+false
+a=10;
+10
+isFinite(a);
+true
+a=10/0;
+Infinity
+isFinite(a)?a:0
+0
+a="10";
+'10'
+typeof a;
+'string'
+a + 20;
+'1020'
+parseInt(a) + 20;
+30
+a = "20.90";
+'20.90'
+a + 20;
+'20.9020'
+parseFloat(a) + 20;
+40.9

@@ -1,0 +1,18 @@
+var arr = [10,20,30];
+undefined
+typeof arr;
+'object'
+var obj = {};
+undefined
+var phones = [2222,4444,5566,6777,8886,4442];
+undefined
+var phones = {"ram":2222,"shyam":4444, "tim":5566};
+undefined
+phones.ram;
+2222
+arr[0];
+10
+phones['ram'];
+2222
+typeof phones;
+'object'

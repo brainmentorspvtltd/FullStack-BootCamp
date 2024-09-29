@@ -1,0 +1,34 @@
+function show(){
+   console.log('I am Show '); 
+}
+undefined
+show(); // Function call
+VM85:2 I am Show 
+undefined
+function show(){
+   console.log('I am Show '); 
+    return 100;
+}
+undefined
+show();
+VM155:2 I am Show 
+100
+typeof show;
+'function'
+var a = show();
+VM155:2 I am Show 
+undefined
+a;
+100
+typeof a;
+'number'
+a = show; // function reference pass 
+ƒ show(){
+   console.log('I am Show '); 
+    return 100;
+}
+typeof a;
+'function'
+a();
+VM155:2 I am Show 
+100
