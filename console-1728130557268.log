@@ -1,0 +1,66 @@
+function show(fn){
+    console.log("I am the Show ");
+    return function (){
+        return "I am a Nested Fn ";
+    }
+}
+undefined
+function show(fn){
+    console.log("I am the Show ");
+    fn(); // call
+    return function (){
+        return "I am a Nested Fn ";
+    }
+}
+
+undefined
+typeof show;
+'function'
+function disp(){
+    console.log("I am the Disp ");
+}
+undefined
+show(disp);
+VM222:2 I am the Show 
+VM310:2 I am the Disp 
+ƒ (){
+        return "I am a Nested Fn ";
+    }
+var t = show(disp);
+VM222:2 I am the Show 
+VM310:2 I am the Disp 
+undefined
+typeof t;
+'function'
+t;
+ƒ (){
+        return "I am a Nested Fn ";
+    }
+t();
+'I am a Nested Fn '
+var add = (a,b)=>a+b;
+undefined
+typeof add;
+'function'
+add(10,20);
+30
+var e = new show();
+VM222:2 I am the Show 
+VM222:3 Uncaught TypeError: fn is not a function
+    at new show (<anonymous>:3:5)
+    at <anonymous>:1:9
+show @ VM222:3
+(anonymous) @ VM577:1
+var e = new disp();
+VM310:2 I am the Disp 
+undefined
+e;
+disp {}
+typeof e;
+'object'
+e instanceof disp;
+true
+var f = new add(10,20);
+VM783:1 Uncaught TypeError: add is not a constructor
+    at <anonymous>:1:9
+(anonymous) @ VM783:1

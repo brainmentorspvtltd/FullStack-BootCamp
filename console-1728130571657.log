@@ -1,0 +1,22 @@
+var arr = [10,20,90,100,88,44,100,20,90,10];
+undefined
+var subArray = arr.filter(e=>e>50);
+undefined
+subArray;
+(5) [90, 100, 88, 100, 90]
+var clone = arr.filter(e=>true);
+undefined
+clone;
+(10) [10, 20, 90, 100, 88, 44, 100, 20, 90, 10]
+arr;
+(10) [10, 20, 90, 100, 88, 44, 100, 20, 90, 10]
+clone == arr;
+false
+arr.filter(e=>e==100).length;
+2
+arr;
+(10) [10, 20, 90, 100, 88, 44, 100, 20, 90, 10]
+arr = arr.filter(e=>e>=50);
+(5) [90, 100, 88, 100, 90]
+arr;
+(5) [90, 100, 88, 100, 90]

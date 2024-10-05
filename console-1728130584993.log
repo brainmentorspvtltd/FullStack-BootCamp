@@ -1,0 +1,81 @@
+// reduce
+undefined
+var arr = [10,90,10,99,100,20,10];
+undefined
+arr.filter(e=>e==10);
+(3) [10, 10, 10]
+arr.filter(e=>e==10).length;
+3
+arr.reduce((acc, e)=> acc + e);
+339
+arr.reduce((acc, e)=> acc + e,0);
+339
+arr.reduce((acc, e)=>{
+    if(e>90){
+        acc = acc + e;
+    }
+    return acc;
+}
+VM400:6 Uncaught SyntaxError: missing ) after argument list
+arr.reduce((acc, e)=>{
+    if(e>90){
+        acc = acc + e;
+    }
+    return acc;
+});
+209
+arr;
+(7) [10, 90, 10, 99, 100, 20, 10]
+arr;
+(7) [10, 90, 10, 99, 100, 20, 10]
+10 + 99 + 100
+209
+arr.reduce((acc, e)=>{
+    if(e>90){
+        acc = acc + e;
+    }
+    return acc;
+}, 0);
+199
+arr.reduce((acc, e)=>{
+   if(e>90){
+         acc.push(e);  
+   } 
+    return acc;
+},[])
+(2) [99, 100]
+var r = arr.reduce((acc, e)=>{
+   if(e>90){
+         acc.push(e);  
+   } 
+    return acc;
+},[])
+undefined
+r;
+(2) [99, 100]
+arr.filter(e=>e>90);
+(2) [99, 100]
+var prices = [10000,4354545,6576576,434343];
+undefined
+prices.reduce((acc, p)=>{
+    acc.push(p + p * 0.18);
+    return acc;
+});
+VM957:2 Uncaught TypeError: acc.push is not a function
+    at <anonymous>:2:9
+    at Array.reduce (<anonymous>)
+    at <anonymous>:1:8
+(anonymous) @ VM957:2
+(anonymous) @ VM957:1
+prices.reduce((acc, p)=>{
+    acc.push(p + p * 0.18);
+    return acc;
+}, []);
+(4) [11800, 5138363.1, 7760359.68, 512524.74]
+var t = prices.reduce((acc, p)=>{
+    acc.push(p + p * 0.18);
+    return acc;
+}, []);
+undefined
+t;
+(4) [11800, 5138363.1, 7760359.68, 512524.74]

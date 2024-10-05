@@ -1,0 +1,30 @@
+// sorting
+undefined
+var arr = [1000,2000,88,22,1,99,100,222,5555];
+undefined
+arr.sort();
+(9) [1, 100, 1000, 2000, 22, 222, 5555, 88, 99]
+arr.sort((a,b)=>a-b);
+(9) [1, 22, 88, 99, 100, 222, 1000, 2000, 5555]
+arr.sort((a,b)=>b-a);
+(9) [5555, 2000, 1000, 222, 100, 99, 88, 22, 1]
+var names = ['ram', 'shyam', 'amit', 'ajay'];
+undefined
+'ram'.localeCompare('amit');
+1
+'amit'.localeCompare('amit');
+0
+'amit'.localeCompare('ram');
+-1
+names.sort((a,b)=>a.localeCompare(b));
+(4) ['ajay', 'amit', 'ram', 'shyam']
+names.sort((a,b)=>b.localeCompare(a));
+(4) ['shyam', 'ram', 'amit', 'ajay']
+const persons = [{id:1001, name:'ram', salary:44444}, {id:1002,name:'amit', salary: 66666}, {id:1003, name:'tim', salary:14344}]
+undefined
+persons.sort((a,b)=>a.salary - b.salary));
+VM773:1 Uncaught SyntaxError: Unexpected token ')'
+persons.sort((a,b)=>a.salary - b.salary);
+(3) [{…}, {…}, {…}]0: {id: 1003, name: 'tim', salary: 14344}1: {id: 1001, name: 'ram', salary: 44444}2: {id: 1002, name: 'amit', salary: 66666}length: 3[[Prototype]]: Array(0)
+persons.sort((a,b)=>b.salary - a.salary);
+(3) [{…}, {…}, {…}]0: {id: 1002, name: 'amit', salary: 66666}1: {id: 1001, name: 'ram', salary: 44444}2: {id: 1003, name: 'tim', salary: 14344}length: 3[[Prototype]]: Array(0)

@@ -1,0 +1,56 @@
+// Array Advance Methods
+undefined
+var arr = [10,20,30,40,50];
+undefined
+arr;
+(5) [10, 20, 30, 40, 50]
+for(let i of arr){
+    console.log(i);
+}
+VM198:2 10
+VM198:2 20
+VM198:2 30
+VM198:2 40
+VM198:2 50
+undefined
+arr.forEach(e=>console.log(e));
+VM334:1 10
+VM334:1 20
+VM334:1 30
+VM334:1 40
+VM334:1 50
+undefined
+arr.forEach((e,i)=>console.log(e, i));
+VM366:1 10 0
+VM366:1 20 1
+VM366:1 30 2
+VM366:1 40 3
+VM366:1 50 4
+undefined
+arr.forEach((e,i, a)=>console.log(e, i, a));
+VM408:1 10 0 (5) [10, 20, 30, 40, 50]
+VM408:1 20 1 (5) [10, 20, 30, 40, 50]
+VM408:1 30 2 (5) [10, 20, 30, 40, 50]
+VM408:1 40 3 (5) [10, 20, 30, 40, 50]
+VM408:1 50 4 (5) [10, 20, 30, 40, 50]
+undefined
+arr;
+(5) [10, 20, 30, 40, 50]
+arr.find(e=>e == 40);
+40
+arr.find(e=>e>10);
+20
+arr.find(e=>e>10000);
+undefined
+arr.findIndex(e=>e==20);
+1
+arr.findIndex(e=>e>20);
+2
+arr.findIndex(e=>e>200);
+-1
+arr = [10,20,30,10,90,10,100];
+(7) [10, 20, 30, 10, 90, 10, 100]
+arr.findIndex(e=>e==10);
+0
+arr.findLastIndex(e=>e==10);
+5

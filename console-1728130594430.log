@@ -1,0 +1,14 @@
+// some and every
+undefined
+var arr = [10,290,99,55,333,5666];
+undefined
+arr.some(e=>e>10);
+true
+arr.some(e=>e>5000);
+true
+arr.some(e=>e>50000);
+false
+arr.every(e=>e>10);
+false
+arr.every(e=>e>=10);
+true

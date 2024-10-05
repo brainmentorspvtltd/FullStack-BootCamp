@@ -1,0 +1,44 @@
+// Map
+undefined
+var prices = [1000,2000,4000,8999, 6666,4444];
+undefined
+var prices = [1000,2000,4000,8999, 665666,444664];
+undefined
+100000.toLocaleString('hi');
+VM147:1 Uncaught SyntaxError: Invalid or unexpected token
+var p = 100000;
+undefined
+p.toLocaleString('hi');
+'1,00,000'
+p.toLocaleString('fr');
+'100 000'
+p.toLocaleString('en');
+'100,000'
+// Unformatted ---> (MAP) ---> Formatted 
+undefined
+prices.map(p=>p.toLocaleString('hi'));
+(6) ['1,000', '2,000', '4,000', '8,999', '6,65,666', '4,44,664']
+var t = prices.map(p=>p.toLocaleString('hi'));
+undefined
+t;
+(6) ['1,000', '2,000', '4,000', '8,999', '6,65,666', '4,44,664']
+prices;
+(6) [1000, 2000, 4000, 8999, 665666, 444664]
+var t = prices.map(p=>`Rs ${p.toLocaleString('hi')}`);
+undefined
+t;
+(6) ['Rs 1,000', 'Rs 2,000', 'Rs 4,000', 'Rs 8,999', 'Rs 6,65,666', 'Rs 4,44,664']
+var gst = prices.map(price=>price + price * 0.18);
+undefined
+gst;
+(6) [1180, 2360, 4720, 10618.82, 785485.88, 524703.52]
+prices;
+(6) [1000, 2000, 4000, 8999, 665666, 444664]
+var clone = prices.map(p=>p);
+undefined
+clone;
+(6) [1000, 2000, 4000, 8999, 665666, 444664]
+prices;
+(6) [1000, 2000, 4000, 8999, 665666, 444664]
+clone == prices;
+false
