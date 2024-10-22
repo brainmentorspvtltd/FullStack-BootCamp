@@ -1,0 +1,81 @@
+// callback function
+undefined
+console.log('Start ');
+setTimeout(function(){
+  console.log('Exam Over');  
+}, 5000);
+console.log('End');
+VM300:1 Start 
+VM300:5 End
+undefined
+VM300:3 Exam Over
+Warning: Don’t paste code into the DevTools Console that you don’t understand or haven’t reviewed yourself. This could allow attackers to steal your identity or take control of your computer. Please type ‘allow pasting’ below and hit Enter to allow pasting.
+allow pasting
+const URL= 'https://fakestoreapi.com/products';
+const promise = fetch(URL);
+undefined
+promise;
+Promise {<fulfilled>: Response}
+const URL= 'https://fakestoreapi.com/products';
+const promise = fetch(URL);
+console.log(promise);
+VM556:3 Promise {<pending>}
+undefined
+promise;
+Promise {<fulfilled>: Response}
+const URL= 'https://fakestoreapi.com/products';
+const promise = fetch(URL);
+console.log('Loading ');
+promise.then(response=>{
+    console.log('Response comes ', response);
+}).catch(err=>{
+    console.log('Error ', err);
+});
+
+
+
+
+
+
+
+VM882:3 Loading 
+Promise {<pending>}
+VM882:5 Response comes  Response {type: 'cors', url: 'https://fakestoreapi.com/products', redirected: false, status: 200, ok: true, …}body: (...)bodyUsed: falseheaders: Headers {}ok: trueredirected: falsestatus: 200statusText: ""type: "cors"url: "https://fakestoreapi.com/products"[[Prototype]]: Response
+const URL= 'https://fakestoreapi.com/products123';
+const promise = fetch(URL);
+console.log('Loading ');
+promise.then(response=>{
+    console.log('Response comes ', response);
+}).catch(err=>{
+    console.log('Error ', err);
+});
+
+
+
+
+
+
+
+VM887:3 Loading 
+Promise {<pending>}
+VM887:2 
+        
+        
+       GET https://fakestoreapi.com/products123 404 (Not Found)
+(anonymous) @ VM887:2
+VM887:5 Response comes  Response {type: 'cors', url: 'https://fakestoreapi.com/products123', redirected: false, status: 404, ok: false, …}
+async function getProducts(){
+    try{
+        console.log('Loading ');
+    const response = await fetch('https://fakestoreapi.com/products');
+        console.log('Response is ', response);
+    }
+    catch(err){
+        console.log('Error in api call ', err);
+    }
+}
+undefined
+getProducts();
+VM1168:3 Loading 
+Promise {<pending>}
+VM1168:5 Response is  Response {type: 'cors', url: 'https://fakestoreapi.com/products', redirected: false, status: 200, ok: true, …}

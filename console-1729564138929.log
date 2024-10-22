@@ -1,0 +1,22 @@
+console.log('Hi');
+console.log('Hello');
+setTimeout(function(){
+    console.log('Async Welcome ');
+},5000);
+console.log('Bye');
+VM296:1 Hi
+VM296:2 Hello
+VM296:6 Bye
+undefined
+VM296:4 Async Welcome 
+console.log('Hi');
+console.log('Hello');
+setTimeout(function(){
+    console.log('Async Welcome ');
+},0);
+console.log('Bye');
+VM312:1 Hi
+VM312:2 Hello
+VM312:6 Bye
+undefined
+VM312:4 Async Welcome 
